@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discernir sem captura</title>
+
+  <meta name="description" content="Discernimento cristão em tempos de poder, ruído e polarização. Um espaço de leitura lenta, consciência e fidelidade." />
+
+  <!-- Fonte: EB Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f2f1ee;
+      --text: #2b2b2b;
+      --muted: #6f6f6f;
+      --line: #9a9a9a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'EB Garamond', serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 96px;
+      position: relative;
+    }
+
+    /* Linha vertical — ruptura discreta */
+    .container::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 80px;
+      height: calc(100% - 160px);
+      width: 1px;
+      background-color: var(--line);
+    }
+
+    header {
+      margin-bottom: 64px;
+      padding-left: 24px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-style: italic;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    main {
+      padding-left: 24px;
+    }
+
+    p {
+      margin: 0 0 1.2em 0;
+      font-size: 1.05rem;
+    }
+
+    .manifesto {
+      margin-bottom: 64px;
+    }
+
+    .cta {
+      border-top: 1px solid var(--line);
+      padding-top: 32px;
+      margin-top: 48px;
+    }
+
+    .cta p {
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    form {
+      margin-top: 24px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 12px 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+    }
+
+    input[type="submit"] {
+      margin-top: 16px;
+      padding: 10px 16px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      background: none;
+      border: 1px solid var(--line);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: rgba(0,0,0,0.03);
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-left: 24px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer p {
+      margin: 0.4em 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 64px 20px 80px;
+      }
+
+      .container::before {
+        top: 64px;
+        height: calc(100% - 128px);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Discernir sem captura</h1>
+      <h2>Discernimento cristão em tempos de poder, ruído e polarização</h2>
+    </header>
+
+    <main>
+
+      <section class="manifesto">
+        <p>
+          Este não é um projeto de engajamento, nem uma disputa por narrativa.
+        </p>
+
+        <p>
+          É uma tentativa de recuperar algo que foi se perdendo aos poucos:
+          a capacidade cristã de discernir sem se deixar capturar por
+          estruturas de poder, lógicas de mercado ou dinâmicas de polarização.
+        </p>
+
+        <p>
+          Aqui, a fé não é tratada como identidade a ser defendida,
+          nem como instrumento para vencer debates,
+          mas como caminho que forma consciência,
+          sustenta responsabilidade
+          e preserva humanidade em tempos confusos.
+        </p>
+
+        <p>
+          Não há promessas de respostas rápidas,
+          nem de alinhamento automático.
+          O que se oferece é leitura lenta,
+          silêncio suficiente
+          e critérios que resistem à pressa.
+        </p>
+      </section>
+
+      <section class="cta">
+        <p>
+          Se fizer sentido para você,
+          é possível receber gratuitamente o livro
+          <em>Discernimento cristão em tempos de poder, ruído e polarização</em>
+          em troca do seu e-mail.
+        </p>
+
+        <p>
+          Escrevo raramente.
+          Quando escrevo, é porque algo precisa ser dito com cuidado.
+          Não há cronograma.
+          Há responsabilidade.
+        </p>
+
+        <!-- FORMULÁRIO -->
+        <form action="https://buttondown.email/api/emails/embed-subscribe/discernir_sem_captura" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="seu e-mail"
+            required
+          />
+          <input type="submit" value="Receber o PDF" />
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© Discernir sem captura</p>
+      <p>
+        Um espaço de leitura, consciência e fidelidade.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
