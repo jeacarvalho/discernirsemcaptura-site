@@ -1,3 +1,10 @@
 AGENTS.md
 ENCERRAMENTO_SESSao.md
 ENCERRAMENTO_SESSAO.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
